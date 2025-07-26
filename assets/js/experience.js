@@ -5,9 +5,23 @@ AOS.init();
 const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
+    title: "Sofware Implementation Specialist",
+    cardImage: "assets/images/experience-page/flipkart.jpg",
+    place: "Evolabs IT Solutions Ltd",
+    time: "(March 2025- present)",
+    desp: "<li>Implementation, DevOps, Android Development</li>",
+  },
+  {
     title: "Software Development Intern",
     cardImage: "assets/images/experience-page/flipkart.jpg",
-    place: "Flipkart",
+    place: "NLS Tech Solutions Ltd",
+    time: "(May, 2022 - March 2025)",
+    desp: "<li>Banking Solutions</li>",
+  },
+  {
+    title: "Software Development Intern",
+    cardImage: "assets/images/experience-page/flipkart.jpg",
+    place: "Sunflash Technologies Ltd",
     time: "(May, 2020 - present)",
     desp: "<li>Worked to migrate Flipkart lite’s product page to AMP pages so that they load up instantly.</li> <li>Made changes in the current progressive web app of Flipkart to react to different actions performed on AMP page.</li> <li>Created a node module called “fk-amp” which abstracts all the files and middlewares and can be easily imported and used from express server.</li>",
   },
@@ -31,7 +45,7 @@ const showCards2 = () => {
   let output = "";
   exp.forEach(
     ({ title, cardImage, place, time, desp }) =>
-      (output += `        
+    (output += `        
     <div class="col gaap" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="400"> 
       <div class="card card1">
         <img src="${cardImage}" class="featured-image"/>
@@ -91,7 +105,7 @@ const showCards = () => {
   let output = "";
   volunteershipcards.forEach(
     ({ title, cardImage, description }) =>
-      (output += `        
+    (output += `        
       <div class="card volunteerCard" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="600" style="height: 550px;width:400px">
       
       <img src="${cardImage}" height="250" width="65" class="card-img" style="border-radius:10px">
@@ -221,7 +235,7 @@ const showCards3 = () => {
   let output = "";
   mentor.forEach(
     ({ title, image, subtitle, desp, href }) =>
-      (output += `  
+    (output += `  
       <div class="blog-slider__item swiper-slide">
         <div class="blog-slider__img">
             <img src="${image}" alt="">
